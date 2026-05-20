@@ -8,14 +8,10 @@
   "headline": {
     "value": 0,
     "label": "% of crypto-native finance JDs mentioning a purpose-built crypto-accounting tool",
-    "n_total": 10,
+    "n_total": 12,
     "n_with_tool": 0
   },
   "by_tool": [
-    {
-      "tool": "integral",
-      "n": 3
-    },
     {
       "tool": "bitwave",
       "n": 0
@@ -37,6 +33,10 @@
       "n": 0
     },
     {
+      "tool": "integral",
+      "n": 0
+    },
+    {
       "tool": "cryptoworth",
       "n": 0
     }
@@ -50,7 +50,7 @@
     },
     {
       "date": "2026-05-20",
-      "total_finance_jds": 10,
+      "total_finance_jds": 12,
       "with_any_tool": 0,
       "pct": 0
     }
