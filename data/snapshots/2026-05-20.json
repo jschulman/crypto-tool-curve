@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "source": "Crypto Tool Curve",
+    "last_updated": "2026-05-20",
+    "version": "1.0",
+    "next_update": "daily at 03:00 America/Chicago"
+  },
+  "headline": {
+    "value": 0,
+    "label": "% of crypto-native finance JDs mentioning a purpose-built crypto-accounting tool",
+    "n_total": 10,
+    "n_with_tool": 0
+  },
+  "by_tool": [
+    {
+      "tool": "integral",
+      "n": 3
+    },
+    {
+      "tool": "bitwave",
+      "n": 0
+    },
+    {
+      "tool": "cryptio",
+      "n": 0
+    },
+    {
+      "tool": "taxbit",
+      "n": 0
+    },
+    {
+      "tool": "softledger",
+      "n": 0
+    },
+    {
+      "tool": "ledgible",
+      "n": 0
+    },
+    {
+      "tool": "cryptoworth",
+      "n": 0
+    }
+  ],
+  "timeseries": [
+    {
+      "date": "2026-05-19",
+      "total_finance_jds": 0,
+      "with_any_tool": 3,
+      "pct": 0
+    },
+    {
+      "date": "2026-05-20",
+      "total_finance_jds": 10,
+      "with_any_tool": 0,
+      "pct": 0
+    }
+  ]
+}

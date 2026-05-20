@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tool Curve</title>
+  <meta name="description" content="Tracking when crypto-native accounting tooling crosses meaningful adoption in the middle market. Open data, no tracking.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Crypto Tool Curve</h1>
+      <p class="site-subtitle">Tracking when crypto-native accounting tooling crosses meaningful adoption in the middle market</p>
+      <p class="last-updated" id="last-updated">Last updated: loading…</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Headline -->
+    <section class="hero-score" id="hero-section">
+      <div class="hero-inner">
+        <div class="score-display">
+          <div class="score-number" id="hero-score">—</div>
+          <div class="score-label">%</div>
+        </div>
+        <div class="score-meta">
+          <div class="phase-label" id="hero-phase">Loading…</div>
+          <div class="phase-description" id="hero-description"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Per-tool breakdown -->
+    <section class="table-section">
+      <h2 class="section-title">Mentions by Tool</h2>
+      <table class="subsector-table" id="tool-table">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th class="subsector-numeric">JDs mentioning</th>
+            <th class="subsector-numeric">Share of corpus</th>
+          </tr>
+        </thead>
+        <tbody id="tool-tbody">
+          <tr><td colspan="3" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Timeseries -->
+    <section class="chart-section">
+      <h2 class="section-title">Tool Adoption Over Time</h2>
+      <div class="chart-wrap">
+        <canvas id="timeline-chart" height="240"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>Part of <strong>The Crypto Canaries</strong></div>
+      <div class="canaries-row">
+        <a href="https://jschulman.github.io/cfo-gap">cfo-gap</a>
+        <a href="https://jschulman.github.io/crypto-tool-curve">crypto-tool-curve</a>
+        <a href="https://jschulman.github.io/compliance-canary">compliance-canary</a>
+      </div>
+      <div>Sibling to <strong>The Canaries</strong></div>
+      <div class="canaries-row">
+        <a href="https://jschulman.github.io/displacement-curve">displacement-curve</a>
+        <a href="https://jschulman.github.io/stablecoin-signal">stablecoin-signal</a>
+        <a href="https://jschulman.github.io/quantum-qanary">quantum-qanary</a>
+      </div>
+      <div style="margin-top:1rem;">
+        Methodology: <a href="https://github.com/jschulman/crypto-tool-curve/blob/main/METHODOLOGY.md">METHODOLOGY.md</a> ·
+        Source: <a href="https://github.com/jschulman/crypto-tool-curve">github.com/jschulman/crypto-tool-curve</a> ·
+        MIT License
+      </div>
+      <div style="margin-top:0.5rem;">
+        &copy; 2026 <a href="https://jayschulman.com">Jay Schulman</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
