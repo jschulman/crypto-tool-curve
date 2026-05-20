@@ -51,10 +51,50 @@ function renderHeadline(data) {
   const rate = data.headline.value;
   const phase = phaseFor(rate);
   document.getElementById('hero-score').textContent = formatPct(rate, 1);
+  document.getElementById('hero-sub').textContent =
+    `${data.headline.n_with_tool} of ${data.headline.n_total} finance JDs`;
+
+  // Contrast block (v1.1+)
+  const contrast = data.contrast;
+  if (contrast) {
+    document.getElementById('contrast-score').textContent = formatPct(contrast.value, 1);
+    document.getElementById('contrast-sub').textContent =
+      `${contrast.n_with_tool} of ${contrast.n_total} finance JDs`;
+  } else {
+    document.getElementById('contrast-row').style.display = 'none';
+  }
+
   document.getElementById('hero-phase').textContent = phase.label;
-  document.getElementById('hero-description').textContent = phase.desc;
+  document.getElementById('hero-description').textContent =
+    (contrast && contrast.narrative) ? contrast.narrative : phase.desc;
   document.getElementById('last-updated').textContent =
-    `Last updated: ${data.metadata.last_updated} · n=${data.headline.n_total} finance JDs, ${data.headline.n_with_tool} mentioning a tracked tool`;
+    `Last updated: ${data.metadata.last_updated} · n=${data.headline.n_total} finance JDs`;
+}
+
+function renderGenericErpTable(data) {
+  const total = data.headline.n_total;
+  const rows = (data.by_generic_erp || []).slice().sort((a, b) => b.n - a.n);
+  const tbody = document.getElementById('generic-erp-tbody');
+  if (!tbody) return;
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="3" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">No data yet</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(t => {
+    const share = total > 0 ? (t.n / total) : 0;
+    const pct = formatPct(share, 1);
+    const widthPct = Math.max(2, Math.min(100, share * 100));
+    return `
+      <tr>
+        <td class="subsector-name">${escapeHtml(t.tool)}</td>
+        <td class="subsector-numeric">${t.n}</td>
+        <td class="subsector-numeric">
+          ${pct}
+          <span class="ratio-bar" aria-hidden="true"><span class="ratio-bar-fill" style="width:${widthPct}%;background:#3fb950"></span></span>
+        </td>
+      </tr>
+    `;
+  }).join('');
 }
 
 function renderToolTable(data) {
@@ -150,6 +190,7 @@ function escapeHtml(s) {
     const [data, ts] = await Promise.all([loadLatest(), loadSnapshots()]);
     renderHeadline(data);
     renderToolTable(data);
+    renderGenericErpTable(data);
     renderTimeline(data, ts);
   } catch (err) {
     document.getElementById('hero-score').textContent = '—';

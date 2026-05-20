@@ -19,12 +19,21 @@
   </header>
 
   <main class="container">
-    <!-- Headline -->
+    <!-- Headline + Contrast (the gap IS the signal) -->
     <section class="hero-score" id="hero-section">
       <div class="hero-inner">
-        <div class="score-display">
-          <div class="score-number" id="hero-score">—</div>
-          <div class="score-label">%</div>
+        <div class="contrast-row" id="contrast-row">
+          <div class="contrast-card crypto">
+            <div class="contrast-number" id="hero-score">—</div>
+            <div class="contrast-label">crypto-specific tools</div>
+            <div class="contrast-sub" id="hero-sub">—</div>
+          </div>
+          <div class="contrast-gap">vs</div>
+          <div class="contrast-card generic">
+            <div class="contrast-number" id="contrast-score">—</div>
+            <div class="contrast-label">generic ERPs</div>
+            <div class="contrast-sub" id="contrast-sub">—</div>
+          </div>
         </div>
         <div class="score-meta">
           <div class="phase-label" id="hero-phase">Loading…</div>
@@ -33,9 +42,9 @@
       </div>
     </section>
 
-    <!-- Per-tool breakdown -->
+    <!-- Per-tool breakdown — crypto-specific -->
     <section class="table-section">
-      <h2 class="section-title">Mentions by Tool</h2>
+      <h2 class="section-title">Crypto-specific tools (mentions in finance JDs)</h2>
       <table class="subsector-table" id="tool-table">
         <thead>
           <tr>
@@ -45,6 +54,23 @@
           </tr>
         </thead>
         <tbody id="tool-tbody">
+          <tr><td colspan="3" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Per-tool breakdown — generic ERPs -->
+    <section class="table-section">
+      <h2 class="section-title">Generic ERPs (the contrast)</h2>
+      <table class="subsector-table" id="generic-erp-table">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th class="subsector-numeric">JDs mentioning</th>
+            <th class="subsector-numeric">Share of corpus</th>
+          </tr>
+        </thead>
+        <tbody id="generic-erp-tbody">
           <tr><td colspan="3" style="text-align:center;color:var(--text-secondary);padding:1.5rem;">Loading…</td></tr>
         </tbody>
       </table>
