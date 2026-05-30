@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-05-29",
+    "last_updated": "2026-05-30",
     "version": "1.1",
     "next_update": "daily at 03:00 America/Chicago"
   },
@@ -145,6 +145,12 @@
     },
     {
       "date": "2026-05-29",
+      "total_finance_jds": 0,
+      "with_any_tool": 2,
+      "pct": 0
+    },
+    {
+      "date": "2026-05-30",
       "total_finance_jds": 14,
       "with_any_tool": 0,
       "pct": 0
