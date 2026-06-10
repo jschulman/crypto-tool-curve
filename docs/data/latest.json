@@ -1,34 +1,34 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-06-09",
+    "last_updated": "2026-06-10",
     "version": "1.1",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
     "value": 0,
     "label": "% of crypto-native finance JDs mentioning a purpose-built crypto-accounting tool",
-    "n_total": 15,
+    "n_total": 40,
     "n_with_tool": 0
   },
   "contrast": {
-    "value": 0.5333,
+    "value": 0.45,
     "label": "% of the same finance JDs mentioning a generic ERP (NetSuite, Sage Intacct, Xero, QuickBooks, Microsoft Dynamics, SAP, Workday Financials, Oracle Fusion)",
-    "n_total": 15,
-    "n_with_tool": 8,
+    "n_total": 40,
+    "n_with_tool": 18,
     "narrative": "The gap between crypto-specific and generic ERP adoption IS the canary signal — crypto-native finance teams use general-purpose tools, not purpose-built crypto-accounting infrastructure."
   },
   "by_tool": [
     {
       "tool": "bitwave",
-      "n": 0
-    },
-    {
-      "tool": "cryptio",
-      "n": 0
+      "n": 1
     },
     {
       "tool": "taxbit",
+      "n": 1
+    },
+    {
+      "tool": "cryptio",
       "n": 0
     },
     {
@@ -51,18 +51,26 @@
   "by_generic_erp": [
     {
       "tool": "netsuite",
-      "n": 8
+      "n": 16
     },
     {
-      "tool": "sage-intacct",
-      "n": 0
-    },
-    {
-      "tool": "xero",
-      "n": 0
+      "tool": "sap",
+      "n": 3
     },
     {
       "tool": "quickbooks",
+      "n": 2
+    },
+    {
+      "tool": "xero",
+      "n": 1
+    },
+    {
+      "tool": "oracle-fusion",
+      "n": 1
+    },
+    {
+      "tool": "sage-intacct",
       "n": 0
     },
     {
@@ -70,15 +78,7 @@
       "n": 0
     },
     {
-      "tool": "sap",
-      "n": 0
-    },
-    {
       "tool": "workday",
-      "n": 0
-    },
-    {
-      "tool": "oracle-fusion",
       "n": 0
     }
   ],
@@ -211,7 +211,13 @@
     },
     {
       "date": "2026-06-09",
-      "total_finance_jds": 15,
+      "total_finance_jds": 0,
+      "with_any_tool": 0,
+      "pct": 0
+    },
+    {
+      "date": "2026-06-10",
+      "total_finance_jds": 40,
       "with_any_tool": 0,
       "pct": 0
     }
