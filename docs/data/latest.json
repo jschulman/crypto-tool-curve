@@ -1,21 +1,21 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-06-27",
+    "last_updated": "2026-06-28",
     "version": "1.1",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "headline": {
-    "value": 0.0109,
+    "value": 0.0103,
     "label": "% of crypto-native finance JDs (active in the last 90 days) mentioning a purpose-built crypto-accounting tool",
-    "n_total": 92,
+    "n_total": 97,
     "n_with_tool": 1
   },
   "contrast": {
-    "value": 0.337,
+    "value": 0.3299,
     "label": "% of the same finance JDs (active in the last 90 days) mentioning a generic ERP (NetSuite, Sage Intacct, Xero, QuickBooks, Microsoft Dynamics, SAP, Workday Financials, Oracle Fusion)",
-    "n_total": 92,
-    "n_with_tool": 31,
+    "n_total": 97,
+    "n_with_tool": 32,
     "narrative": "The gap between crypto-specific and generic ERP adoption IS the canary signal — crypto-native finance teams use general-purpose tools, not purpose-built crypto-accounting infrastructure."
   },
   "by_tool": [
@@ -51,7 +51,7 @@
   "by_generic_erp": [
     {
       "tool": "netsuite",
-      "n": 27
+      "n": 28
     },
     {
       "tool": "sap",
@@ -59,7 +59,7 @@
     },
     {
       "tool": "quickbooks",
-      "n": 2
+      "n": 3
     },
     {
       "tool": "microsoft-dynamics",
@@ -319,9 +319,15 @@
     },
     {
       "date": "2026-06-27",
-      "total_finance_jds": 92,
+      "total_finance_jds": 0,
+      "with_any_tool": 2,
+      "pct": 0
+    },
+    {
+      "date": "2026-06-28",
+      "total_finance_jds": 97,
       "with_any_tool": 1,
-      "pct": 0.0109
+      "pct": 0.0103
     }
   ]
 }
