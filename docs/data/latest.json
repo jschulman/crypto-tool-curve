@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-09-21",
+    "last_updated": "2026-09-22",
     "version": "1.1",
     "next_update": "daily at 03:00 America/Chicago"
   },
@@ -51,7 +51,7 @@
   "by_generic_erp": [
     {
       "tool": "netsuite",
-      "n": 48
+      "n": 49
     },
     {
       "tool": "quickbooks",
@@ -62,15 +62,15 @@
       "n": 6
     },
     {
-      "tool": "microsoft-dynamics",
-      "n": 2
-    },
-    {
       "tool": "oracle-fusion",
       "n": 2
     },
     {
       "tool": "xero",
+      "n": 1
+    },
+    {
+      "tool": "microsoft-dynamics",
       "n": 1
     },
     {
@@ -817,6 +817,12 @@
     },
     {
       "date": "2026-09-21",
+      "total_finance_jds": 0,
+      "with_any_tool": 2,
+      "pct": 0
+    },
+    {
+      "date": "2026-09-22",
       "total_finance_jds": 181,
       "with_any_tool": 1,
       "pct": 0.0055
