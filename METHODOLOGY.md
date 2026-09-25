@@ -1,103 +1,49 @@
 # Methodology
 
-How Crypto Tool Curve is computed, what its limits are, and how to read its numbers honestly.
-
-## One question
-
-Is purpose-built crypto-accounting tooling actually being adopted by crypto-native middle-market finance teams?
-
-## The metric
-
-**Tool Adoption Rate**, defined corpus-wide and per-tool:
+What share of eligible finance job descriptions names a specialist accounting tool, a general-purpose ERP, or an operational requirement?
 
 ```
-adoption_rate = (open finance JDs mentioning any tracked crypto-accounting tool) / (open finance JDs)
+tool_demand_share = unique eligible JDs naming any tracked specialist tool / eligible JDs
 ```
 
-Where:
-- **"Open"** means the listing was present in the most recent scan of the company's public job-board feed.
-- **"Finance JDs"** are job postings matching the same fixed taxonomy of accounting and finance roles used by [The CFO Gap](https://jschulman.github.io/cfo-gap): Controller, Assistant Controller, Corporate Controller, VP Finance, Head of Finance, CFO, Accounting Manager, Senior Accounting Manager, Accounting Lead, Senior Accountant, Tax Manager, Tax Director, FP&A Manager, FP&A Director, Technical Accounting Manager, Revenue Accountant, Staff Accountant, AP/AR Specialist, Treasury Manager, Internal Audit Manager, SOX/Compliance Manager.
-- **"Mentioning any tracked tool"** means the JD body (full description text, lowercased) contains a case-insensitive whole-word match for any vendor name in the tracked list below.
+The denominator is **JDs last observed in the preceding 90 days**, including jobs that have since closed, at baseline employers. It is not the number currently open. A JD naming multiple specialist tools counts once in the headline and once per named tool in the breakdown. Vendor shares can therefore sum above the headline percentage.
 
-A single JD that mentions two tracked tools counts once toward the headline (it's a `with_any_tool` JD) and once per tool toward the per-tool breakdown.
+A separate measure uses the same denominator for general-purpose ERPs. These categories can overlap in one JD or one company's systems. Their difference does not establish spreadsheet use, installed software or replacement of one category by another.
 
-## Tracked tools
+## Tracked names and requirements
 
-The current tracked list (alphabetical):
+The specialist roster is **Bitwave, TaxBit, Cryptio, SoftLedger, Ledgible, Cryptoworth and Lukka**. Earlier documentation listed Integral incorrectly; the roster described here matches the producer's actual names. General-purpose ERP names are NetSuite, Sage Intacct, Xero, QuickBooks, Microsoft Dynamics, SAP, Workday and Oracle Fusion.
 
-- **Bitwave** — institutional crypto accounting subledger
-- **Cryptio** — crypto bookkeeping and accounting automation
-- **Cryptoworth** — multi-entity crypto accounting platform
-- **Integral** — crypto-native finance and accounting suite
-- **Ledgible** — tax and accounting reporting for digital assets
-- **SoftLedger** — multi-entity general ledger with crypto support
-- **TaxBit** — enterprise digital-asset tax and accounting
+The additional requirement breakdown tracks integration, reconciliation, custody and controls language **when the job description also has blockchain-related context**. It does not require a vendor name. Each category reports unique matching JDs, a share of the same eligible sample and the number of matching companies. Company breadth also reports how many employers account for specialist-tool and ERP mentions. Missing breadth or requirements in an older snapshot display as unavailable, not zero.
 
-The list is intentionally limited to vendors selling purpose-built crypto-accounting *subledgers* or *general ledgers*. General-purpose accounting tools (NetSuite, QuickBooks, Sage Intacct), wallet/custody tools (Fireblocks, Anchorage, BitGo), and tax-only consumer tools are explicitly **not** on this list. The list is reviewed quarterly and changes will be noted in this file with a version bump.
+Matching is case-insensitive and vendor or requirement-specific. Keyword matching can include preferred experience, historical systems, alternatives or negated requirements. A context match does not prove that the named operational requirement itself uses a blockchain.
 
-## Data source
+## Eligible finance roles
 
-The scanner queries public job-board APIs:
-- **Ashby:** `https://api.ashbyhq.com/posting-api/job-board/{slug}`
-- **Greenhouse:** `https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true`
-- **Lever:** `https://api.lever.co/v0/postings/{slug}?mode=json`
+Controller and assistant-controller variants; finance leadership and CFO; strategic finance; accounting management and leads; senior, financial, staff, fund and other matched accountants; tax management; FP&A; technical accounting and financial reporting; AP/AR; treasury management; internal audit; and SOX/compliance roles. Titles are matched by ordered, case-insensitive patterns. Bookkeeper and payroll-manager capture-only roles are excluded. This includes individual contributors, so “senior finance” does not precisely describe the entire sample.
 
-For each company in the curated target list, the scanner pulls all open postings, classifies titles into the finance taxonomy, then string-matches the full JD body against the tool list. All matches are case-insensitive whole-word (word-boundary regex) to avoid false positives from substrings.
+## Sources and coverage
 
-All data is **public**. No portal logins. No robots.txt bypass. Per-domain rate limiting. User-Agent identifies the project.
+The private producer polls public Ashby, Greenhouse and Lever job-board feeds and publishes aggregates here. The crypto-native baseline is a selected, evolving employer sample; it is not a census or a representative survey. Company additions, exclusions, title classification, job-board coverage and collection failures can change the sample. Companies without observed eligible jobs are not represented in a JD denominator.
 
-## Target universe
+The baseline is retained separately from any expanded panel of incumbent financial businesses. An incumbent employer must not be added to this series simply to widen market observation. Employer type, infrastructure-provider role and use case are separate attributes in the expanded research panel. A crypto-native firm can also provide financial infrastructure.
 
-The curated target list is the same crypto-native middle-market universe used by The CFO Gap:
-- Primary business is crypto-native (not "crypto-curious" fintech)
-- Last priced round: Series B, C, or D (or equivalent token raise scale)
-- Headcount: roughly 50–500
-- Last funding event within 36 months
-- US or US-adjacent operations
+Daily refresh is the intended cadence. The date shown in the dashboard is the observation date, which can precede publication. A scheduled workflow or recent export is not proof that every employer feed was refreshed successfully. Snapshots live in `data/` and `docs/data/`; the dashboard reads `docs/data/latest.json`.
 
-Hard exclusions: too small (seed / pre-seed / Series A under $10M raised), too big (Coinbase, Binance, Kraken, Block, Robinhood Crypto, Tether, Circle, public crypto companies), dead or distressed.
+## Interpretation
 
-The target list is maintained privately and refreshed quarterly.
+This is requested-skill demand. A firm can use software without naming it in a job description, or name a tool without having installed it. Low specialist-tool demand does not demonstrate spreadsheet dependence. Requirement mentions do not prove adoption, production usage, control effectiveness, vendor sales, or assurance purchasing intent.
 
-## Update cadence
+## Material historical changes
 
-The dashboard refreshes daily. Each snapshot includes:
-- A timestamp
-- Headline adoption rate (corpus-wide)
-- Per-tool mention count
-- Total tracked JD count (the denominator)
-- A point in the daily time series
+On **2026-06-24**, demand measurement moved to a 90-day active window and finance title classification broadened. Earlier windows may differ. Version 2.0 adds company breadth and operational requirements, and stops filling missing historical denominators with zero. A historical percentage is restored only when a saved observation supplies its own numerator and denominator; present-day jobs cannot reconstruct an old denominator. Where that evidence is absent, history remains unknown.
 
-Snapshots are versioned under `data/snapshots/YYYY-MM-DD.json`. The dashboard reads `data/latest.json`.
+## Missing data and historical comparability
 
-## Caveats and limits
+An unknown numerator or a zero/unknown denominator produces an unknown percentage, displayed as `—`; it is never interpreted as 0%. Missing calendar dates and unavailable values remain gaps in charts. A measured zero requires a known, positive denominator. Material definition changes can break comparability even where a chart is continuous.
 
-- **Mentions ≠ adoption.** A JD listing "experience with Bitwave or similar" tells us the company values that skill — not that they've signed a contract. The metric is a *demand* signal, not a usage signal.
-- **JD body language is noisy.** A JD that says "no experience with Bitwave required" still mentions Bitwave. Negation handling is not attempted; the signal works in aggregate, not per individual JD.
-- **The tracked tool list is curated.** Adding or removing a vendor will shift the headline. Changes are documented in this file.
-- **The target list is curated.** We are intentionally focused on crypto-native middle-market companies. Larger crypto companies (Series E+) and smaller ones (pre-Series A) are excluded by design.
-- **First-pass classifier.** Finance role titles are matched against the same regex taxonomy as The CFO Gap. Real-world title variation is captured but not perfectly.
-
-## What this cannot tell you
-
-- Whether a company is actually *using* a tool (only that they're hiring for it)
-- Which vendors are winning deals (no contract data)
-- Whether tooling reduces stall (that's The CFO Gap)
-- Anything about pricing, contract size, or churn
-
-## Versioning
-
-Methodology versions are tracked in this file. Material changes (a vendor added, the role taxonomy revised) will bump the `version` field in `data/latest.json` and be noted here.
-
-Current version: **1.0** (2026-05-19).
+The 2026-09-25 interpretation update removes unsupported success/failure verdicts. Version 2.0 producer snapshots identify the updated methodology in metadata; older snapshots retain their original version. Original aggregate series and URLs remain available. Generated snapshots are published by the producer, not fabricated by the dashboard.
 
 ## Reproducibility
 
-You can replicate Crypto Tool Curve if you:
-1. Curate your own list of crypto-native middle-market companies and their ATS slugs.
-2. Poll their public job-board APIs daily.
-3. Apply the finance role taxonomy.
-4. Word-boundary-match each JD body against the tracked tool list.
-5. Compute the adoption rate per the formula above.
-
-The target list and scanner code are maintained privately (the source repository contains operational exclusions and rubric weights that are not appropriate for public release). The methodology above is the canonical specification.
+Replicate the selected employer feeds, eligibility rules, title and text patterns, and snapshot date. Keep dated counts and denominators together. Save unique-job and company counts at collection time; do not derive old coverage from today’s database. The private producer owns collection and aggregation; this repository renders the published aggregates.

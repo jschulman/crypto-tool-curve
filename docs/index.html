@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto Tool Curve</title>
-  <meta name="description" content="Tracking when crypto-native accounting tooling crosses meaningful adoption in the middle market. Open data, no tracking.">
+  <meta name="description" content="Tracking tool and integration requirements in finance job descriptions. Open data, no tracking.">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -13,13 +13,13 @@
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">Crypto Tool Curve</h1>
-      <p class="site-subtitle">Tracking when crypto-native accounting tooling crosses meaningful adoption in the middle market</p>
+      <p class="site-subtitle">Tracking tool and integration requirements in finance job descriptions</p>
       <p class="last-updated" id="last-updated">Last updated: loading…</p>
     </div>
   </header>
 
   <main class="container">
-    <!-- Headline + Contrast (the gap IS the signal) -->
+    <!-- Complementary tool categories can overlap within a job description. -->
     <section class="hero-score" id="hero-section">
       <div class="hero-inner">
         <div class="contrast-row" id="contrast-row">
@@ -28,10 +28,10 @@
             <div class="contrast-label">crypto-specific tools</div>
             <div class="contrast-sub" id="hero-sub">—</div>
           </div>
-          <div class="contrast-gap">vs</div>
+          <div class="contrast-gap">&amp;</div>
           <div class="contrast-card generic">
             <div class="contrast-number" id="contrast-score">—</div>
-            <div class="contrast-label">generic ERPs</div>
+            <div class="contrast-label">general-purpose ERPs</div>
             <div class="contrast-sub" id="contrast-sub">—</div>
           </div>
         </div>
@@ -50,7 +50,7 @@
           <tr>
             <th>Tool</th>
             <th class="subsector-numeric">JDs mentioning</th>
-            <th class="subsector-numeric">Share of corpus</th>
+            <th class="subsector-numeric">Share of eligible JDs</th>
           </tr>
         </thead>
         <tbody id="tool-tbody">
@@ -59,15 +59,15 @@
       </table>
     </section>
 
-    <!-- Per-tool breakdown — generic ERPs -->
+    <!-- Per-tool breakdown — general-purpose ERPs -->
     <section class="table-section">
-      <h2 class="section-title">Generic ERPs (the contrast)</h2>
+      <h2 class="section-title">General-purpose ERPs</h2>
       <table class="subsector-table" id="generic-erp-table">
         <thead>
           <tr>
             <th>Tool</th>
             <th class="subsector-numeric">JDs mentioning</th>
-            <th class="subsector-numeric">Share of corpus</th>
+            <th class="subsector-numeric">Share of eligible JDs</th>
           </tr>
         </thead>
         <tbody id="generic-erp-tbody">
@@ -76,13 +76,27 @@
       </table>
     </section>
 
+    <p class="chart-caption" id="sample-note"></p>
+
+    <section class="table-section">
+      <h2 class="section-title">Requirements in a Blockchain Context</h2>
+      <p class="chart-caption" id="blockchain-summary">Integration, reconciliation, custody and controls terms are counted separately from vendor names. A matching term in a blockchain-related description is a demand signal, not evidence of production use.</p>
+      <table class="subsector-table">
+        <thead><tr><th>Requirement</th><th class="subsector-numeric">JDs mentioning</th><th class="subsector-numeric">Share of eligible JDs</th><th class="subsector-numeric">Companies</th></tr></thead>
+        <tbody id="requirement-tbody"><tr><td colspan="4">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
     <!-- Timeseries -->
     <section class="chart-section">
-      <h2 class="section-title">Tool Adoption Over Time</h2>
+      <h2 class="section-title">Specialist Tool Demand Over Time</h2>
+      <p class="chart-caption">Finance-role matching and the 90-day demand window changed on June 24, 2026. Earlier periods may use different definitions; missing denominators remain gaps.</p>
       <div class="chart-wrap">
         <canvas id="timeline-chart" height="240"></canvas>
       </div>
     </section>
+    <p class="chart-caption" id="method-note"></p>
+    <p class="chart-caption">This crypto-native baseline is a selected employer sample. It does not measure blockchain adoption across banks, brokers, payment processors, or other incumbent businesses.</p>
   </main>
 
   <footer class="site-footer">
@@ -93,6 +107,10 @@
         <a href="https://jschulman.github.io/crypto-tool-curve">crypto-tool-curve</a>
         <a href="https://jschulman.github.io/compliance-canary">compliance-canary</a>
         <a href="https://jschulman.github.io/comp-pulse">comp-pulse</a>
+      </div>
+      <div class="canaries-row">
+        <a href="https://jschulman.github.io/stablecoin-signal/#financial-rails">Financial Rails</a>
+        <a href="https://jayschulman.com/blockchain#incumbent-panel">Incumbent employer panel</a>
       </div>
       <div>Sibling to <strong>The Canaries</strong></div>
       <div class="canaries-row">
