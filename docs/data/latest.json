@@ -1,849 +1,1319 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-09-25",
-    "version": "1.1",
+    "last_updated": "2026-09-26",
+    "as_of_date": "2026-09-26",
+    "export_generated_at": "2026-09-26T08:30:01.828Z",
+    "version": "2.0",
+    "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
+  },
+  "sample": {
+    "n_jds": 177,
+    "n_companies": 51,
+    "window_days": 90,
+    "cohort": "crypto-baseline-v1"
   },
   "headline": {
     "value": 0.0056,
-    "label": "% of crypto-native finance JDs (active in the last 90 days) mentioning a purpose-built crypto-accounting tool",
-    "n_total": 180,
+    "label": "Share of crypto-native finance JDs active in the last 90 days naming a specialist accounting tool",
+    "n_total": 177,
     "n_with_tool": 1
   },
   "contrast": {
-    "value": 0.3,
-    "label": "% of the same finance JDs (active in the last 90 days) mentioning a generic ERP (NetSuite, Sage Intacct, Xero, QuickBooks, Microsoft Dynamics, SAP, Workday Financials, Oracle Fusion)",
-    "n_total": 180,
+    "value": 0.3051,
+    "label": "Share of the same finance JDs naming a generic ERP",
+    "n_total": 177,
     "n_with_tool": 54,
-    "narrative": "The gap between crypto-specific and generic ERP adoption IS the canary signal — crypto-native finance teams use general-purpose tools, not purpose-built crypto-accounting infrastructure."
+    "narrative": "Specialist tools and ERPs can coexist. Job-description mentions measure hiring demand, not installed software or spreadsheet dependence."
+  },
+  "breadth": {
+    "tool_companies": 1,
+    "erp_companies": 31
   },
   "by_tool": [
     {
-      "tool": "bitwave",
-      "n": 1
-    },
-    {
       "tool": "taxbit",
-      "n": 1
+      "n": 1,
+      "pct": 0.0056,
+      "n_companies": 1
     },
     {
-      "tool": "cryptio",
-      "n": 0
-    },
-    {
-      "tool": "softledger",
-      "n": 0
-    },
-    {
-      "tool": "ledgible",
-      "n": 0
-    },
-    {
-      "tool": "cryptoworth",
-      "n": 0
+      "tool": "bitwave",
+      "n": 1,
+      "pct": 0.0056,
+      "n_companies": 1
     },
     {
       "tool": "lukka",
-      "n": 0
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "tool": "cryptio",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "tool": "ledgible",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "tool": "softledger",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "tool": "cryptoworth",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
     }
   ],
   "by_generic_erp": [
     {
       "tool": "netsuite",
-      "n": 46
+      "n": 46,
+      "pct": 0.2599,
+      "n_companies": 23
     },
     {
       "tool": "quickbooks",
-      "n": 7
+      "n": 7,
+      "pct": 0.0395,
+      "n_companies": 7
     },
     {
       "tool": "sap",
-      "n": 5
+      "n": 5,
+      "pct": 0.0282,
+      "n_companies": 4
     },
     {
       "tool": "oracle-fusion",
-      "n": 3
+      "n": 3,
+      "pct": 0.0169,
+      "n_companies": 3
     },
     {
       "tool": "microsoft-dynamics",
-      "n": 2
+      "n": 2,
+      "pct": 0.0113,
+      "n_companies": 2
     },
     {
       "tool": "xero",
-      "n": 1
+      "n": 1,
+      "pct": 0.0056,
+      "n_companies": 1
     },
     {
       "tool": "workday",
-      "n": 1
+      "n": 1,
+      "pct": 0.0056,
+      "n_companies": 1
     },
     {
       "tool": "sage-intacct",
-      "n": 0
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    }
+  ],
+  "by_requirement": [
+    {
+      "requirement": "custody",
+      "n": 21,
+      "pct": 0.1186,
+      "n_companies": 10
+    },
+    {
+      "requirement": "controls",
+      "n": 15,
+      "pct": 0.0847,
+      "n_companies": 8
+    },
+    {
+      "requirement": "reconciliation",
+      "n": 15,
+      "pct": 0.0847,
+      "n_companies": 11
+    },
+    {
+      "requirement": "integration",
+      "n": 7,
+      "pct": 0.0395,
+      "n_companies": 6
+    },
+    {
+      "requirement": "reserve-attestation",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
+    },
+    {
+      "requirement": "smart-contract-risk",
+      "n": 0,
+      "pct": 0,
+      "n_companies": 0
     }
   ],
   "timeseries": [
     {
       "date": "2026-05-19",
-      "total_finance_jds": 0,
-      "with_any_tool": 3,
-      "pct": 0
+      "total_finance_jds": null,
+      "with_any_tool": null,
+      "pct": null,
+      "matching_companies": null,
+      "status": "unavailable"
     },
     {
       "date": "2026-05-20",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 12,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-21",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 13,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-22",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 12,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-23",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 12,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-24",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 12,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-25",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 12,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-26",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 13,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-27",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 12,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-28",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 14,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-29",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 14,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-30",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 14,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-05-31",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 14,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-01",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 14,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-02",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 14,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-03",
-      "total_finance_jds": 0,
+      "total_finance_jds": 14,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-04",
-      "total_finance_jds": 0,
+      "total_finance_jds": 14,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-05",
-      "total_finance_jds": 0,
+      "total_finance_jds": 15,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-06",
-      "total_finance_jds": 0,
+      "total_finance_jds": 15,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-07",
-      "total_finance_jds": 0,
+      "total_finance_jds": 15,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-08",
-      "total_finance_jds": 0,
+      "total_finance_jds": 15,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-09",
-      "total_finance_jds": 0,
+      "total_finance_jds": 15,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-10",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 40,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-11",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 41,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-12",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 41,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-13",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 41,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-14",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 46,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-15",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 46,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-16",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 46,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-17",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 46,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-18",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 49,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-19",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 48,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-20",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 48,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-21",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 52,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-22",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 51,
+      "with_any_tool": 0,
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-23",
-      "total_finance_jds": 0,
+      "total_finance_jds": 52,
       "with_any_tool": 0,
-      "pct": 0
+      "pct": 0,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-24",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 89,
+      "with_any_tool": 1,
+      "pct": 0.0112,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-25",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 91,
+      "with_any_tool": 1,
+      "pct": 0.011,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-26",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 92,
+      "with_any_tool": 1,
+      "pct": 0.0109,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-27",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 92,
+      "with_any_tool": 1,
+      "pct": 0.0109,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-28",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 97,
+      "with_any_tool": 1,
+      "pct": 0.0103,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-29",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 97,
+      "with_any_tool": 1,
+      "pct": 0.0103,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-06-30",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 97,
+      "with_any_tool": 1,
+      "pct": 0.0103,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-01",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 98,
+      "with_any_tool": 1,
+      "pct": 0.0102,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-02",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 100,
+      "with_any_tool": 1,
+      "pct": 0.01,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-03",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 100,
+      "with_any_tool": 1,
+      "pct": 0.01,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-04",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 100,
+      "with_any_tool": 1,
+      "pct": 0.01,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-05",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 103,
+      "with_any_tool": 1,
+      "pct": 0.0097,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-06",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 103,
+      "with_any_tool": 1,
+      "pct": 0.0097,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-07",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 104,
+      "with_any_tool": 1,
+      "pct": 0.0096,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-08",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 104,
+      "with_any_tool": 1,
+      "pct": 0.0096,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-09",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 104,
+      "with_any_tool": 1,
+      "pct": 0.0096,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-10",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 104,
+      "with_any_tool": 1,
+      "pct": 0.0096,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-11",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 104,
+      "with_any_tool": 1,
+      "pct": 0.0096,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-15",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 107,
+      "with_any_tool": 1,
+      "pct": 0.0093,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-16",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 108,
+      "with_any_tool": 1,
+      "pct": 0.0093,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-17",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 109,
+      "with_any_tool": 1,
+      "pct": 0.0092,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-18",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 110,
+      "with_any_tool": 1,
+      "pct": 0.0091,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-19",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 113,
+      "with_any_tool": 1,
+      "pct": 0.0088,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-20",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 113,
+      "with_any_tool": 1,
+      "pct": 0.0088,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-21",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 114,
+      "with_any_tool": 1,
+      "pct": 0.0088,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-22",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 115,
+      "with_any_tool": 1,
+      "pct": 0.0087,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-23",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 116,
+      "with_any_tool": 1,
+      "pct": 0.0086,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-24",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 117,
+      "with_any_tool": 1,
+      "pct": 0.0085,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-25",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 118,
+      "with_any_tool": 1,
+      "pct": 0.0085,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-26",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 119,
+      "with_any_tool": 1,
+      "pct": 0.0084,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-27",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 119,
+      "with_any_tool": 1,
+      "pct": 0.0084,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-28",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 120,
+      "with_any_tool": 1,
+      "pct": 0.0083,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-29",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 122,
+      "with_any_tool": 1,
+      "pct": 0.0082,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-30",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 123,
+      "with_any_tool": 1,
+      "pct": 0.0081,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-07-31",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 126,
+      "with_any_tool": 1,
+      "pct": 0.0079,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-01",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 126,
+      "with_any_tool": 1,
+      "pct": 0.0079,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-02",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 126,
+      "with_any_tool": 1,
+      "pct": 0.0079,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-03",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 126,
+      "with_any_tool": 1,
+      "pct": 0.0079,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-04",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 128,
+      "with_any_tool": 1,
+      "pct": 0.0078,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-05",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 129,
+      "with_any_tool": 1,
+      "pct": 0.0078,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-06",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 132,
+      "with_any_tool": 1,
+      "pct": 0.0076,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-07",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 134,
+      "with_any_tool": 1,
+      "pct": 0.0075,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-08",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 134,
+      "with_any_tool": 1,
+      "pct": 0.0075,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-09",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 136,
+      "with_any_tool": 1,
+      "pct": 0.0074,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-10",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 136,
+      "with_any_tool": 1,
+      "pct": 0.0074,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-11",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 138,
+      "with_any_tool": 1,
+      "pct": 0.0072,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-12",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 138,
+      "with_any_tool": 1,
+      "pct": 0.0072,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-13",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 146,
+      "with_any_tool": 1,
+      "pct": 0.0068,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-14",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 147,
+      "with_any_tool": 1,
+      "pct": 0.0068,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-15",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 147,
+      "with_any_tool": 1,
+      "pct": 0.0068,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-16",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 147,
+      "with_any_tool": 1,
+      "pct": 0.0068,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-17",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 147,
+      "with_any_tool": 1,
+      "pct": 0.0068,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-18",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 152,
+      "with_any_tool": 1,
+      "pct": 0.0066,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-19",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 151,
+      "with_any_tool": 1,
+      "pct": 0.0066,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-20",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 152,
+      "with_any_tool": 1,
+      "pct": 0.0066,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-21",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 154,
+      "with_any_tool": 1,
+      "pct": 0.0065,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-22",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 155,
+      "with_any_tool": 1,
+      "pct": 0.0065,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-23",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 156,
+      "with_any_tool": 1,
+      "pct": 0.0064,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-24",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 155,
+      "with_any_tool": 1,
+      "pct": 0.0065,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-25",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 157,
+      "with_any_tool": 1,
+      "pct": 0.0064,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-26",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 160,
+      "with_any_tool": 1,
+      "pct": 0.0063,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-27",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 161,
+      "with_any_tool": 1,
+      "pct": 0.0062,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-28",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 161,
+      "with_any_tool": 1,
+      "pct": 0.0062,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-29",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 161,
+      "with_any_tool": 1,
+      "pct": 0.0062,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-30",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 163,
+      "with_any_tool": 1,
+      "pct": 0.0061,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-08-31",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 163,
+      "with_any_tool": 1,
+      "pct": 0.0061,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-01",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 164,
+      "with_any_tool": 1,
+      "pct": 0.0061,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-02",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 165,
+      "with_any_tool": 1,
+      "pct": 0.0061,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-03",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 165,
+      "with_any_tool": 1,
+      "pct": 0.0061,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-04",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 167,
+      "with_any_tool": 1,
+      "pct": 0.006,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-05",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 168,
+      "with_any_tool": 1,
+      "pct": 0.006,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-06",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 168,
+      "with_any_tool": 1,
+      "pct": 0.006,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-07",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 169,
+      "with_any_tool": 1,
+      "pct": 0.0059,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-08",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 169,
+      "with_any_tool": 1,
+      "pct": 0.0059,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-09",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 173,
+      "with_any_tool": 1,
+      "pct": 0.0058,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-10",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 175,
+      "with_any_tool": 1,
+      "pct": 0.0057,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-11",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 175,
+      "with_any_tool": 1,
+      "pct": 0.0057,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-12",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 175,
+      "with_any_tool": 1,
+      "pct": 0.0057,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-13",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 176,
+      "with_any_tool": 1,
+      "pct": 0.0057,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-14",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 174,
+      "with_any_tool": 1,
+      "pct": 0.0057,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-15",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 176,
+      "with_any_tool": 1,
+      "pct": 0.0057,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-16",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 179,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-17",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 180,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-18",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 180,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-19",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 179,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-20",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 181,
+      "with_any_tool": 1,
+      "pct": 0.0055,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-21",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 181,
+      "with_any_tool": 1,
+      "pct": 0.0055,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-22",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 181,
+      "with_any_tool": 1,
+      "pct": 0.0055,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-23",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 180,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-24",
-      "total_finance_jds": 0,
-      "with_any_tool": 2,
-      "pct": 0
+      "total_finance_jds": 180,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
     },
     {
       "date": "2026-09-25",
       "total_finance_jds": 180,
       "with_any_tool": 1,
-      "pct": 0.0056
+      "pct": 0.0056,
+      "matching_companies": null,
+      "status": "saved-snapshot",
+      "methodology_version": "legacy-saved-snapshot"
+    },
+    {
+      "date": "2026-09-26",
+      "total_finance_jds": 177,
+      "with_any_tool": 1,
+      "pct": 0.0056,
+      "matching_companies": 1,
+      "status": "measured",
+      "methodology_version": "finance-demand-v2"
     }
   ]
 }
