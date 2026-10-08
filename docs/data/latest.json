@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-10-07",
-    "as_of_date": "2026-10-07",
-    "export_generated_at": "2026-10-07T08:30:02.387Z",
+    "last_updated": "2026-10-08",
+    "as_of_date": "2026-10-08",
+    "export_generated_at": "2026-10-08T08:30:02.165Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
@@ -1407,6 +1407,15 @@
     },
     {
       "date": "2026-10-07",
+      "total_finance_jds": 192,
+      "with_any_tool": 1,
+      "pct": 0.0052,
+      "matching_companies": 1,
+      "status": "measured",
+      "methodology_version": "finance-demand-v2"
+    },
+    {
+      "date": "2026-10-08",
       "total_finance_jds": 192,
       "with_any_tool": 1,
       "pct": 0.0052,
