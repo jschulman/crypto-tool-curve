@@ -1,15 +1,15 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-10-21",
-    "as_of_date": "2026-10-21",
-    "export_generated_at": "2026-10-21T08:30:02.154Z",
+    "last_updated": "2026-10-22",
+    "as_of_date": "2026-10-22",
+    "export_generated_at": "2026-10-22T08:30:02.359Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "sample": {
-    "n_jds": 190,
+    "n_jds": 189,
     "n_companies": 53,
     "window_days": 90,
     "cohort": "crypto-baseline-v1"
@@ -17,19 +17,19 @@
   "headline": {
     "value": 0.0053,
     "label": "Share of crypto-native finance JDs active in the last 90 days naming a specialist accounting tool",
-    "n_total": 190,
+    "n_total": 189,
     "n_with_tool": 1
   },
   "contrast": {
-    "value": 0.3,
+    "value": 0.2963,
     "label": "Share of the same finance JDs naming a generic ERP",
-    "n_total": 190,
-    "n_with_tool": 57,
+    "n_total": 189,
+    "n_with_tool": 56,
     "narrative": "Specialist tools and ERPs can coexist. Job-description mentions measure hiring demand, not installed software or spreadsheet dependence."
   },
   "breadth": {
     "tool_companies": 1,
-    "erp_companies": 30
+    "erp_companies": 29
   },
   "by_tool": [
     {
@@ -78,44 +78,44 @@
   "by_generic_erp": [
     {
       "tool": "netsuite",
-      "n": 47,
-      "pct": 0.2474,
-      "n_companies": 22
+      "n": 46,
+      "pct": 0.2434,
+      "n_companies": 21
     },
     {
       "tool": "quickbooks",
       "n": 10,
-      "pct": 0.0526,
+      "pct": 0.0529,
       "n_companies": 9
     },
     {
       "tool": "sap",
       "n": 4,
-      "pct": 0.0211,
+      "pct": 0.0212,
       "n_companies": 3
     },
     {
       "tool": "xero",
       "n": 3,
-      "pct": 0.0158,
+      "pct": 0.0159,
       "n_companies": 3
     },
     {
       "tool": "oracle-fusion",
       "n": 3,
-      "pct": 0.0158,
+      "pct": 0.0159,
       "n_companies": 3
     },
     {
       "tool": "sage-intacct",
       "n": 2,
-      "pct": 0.0105,
+      "pct": 0.0106,
       "n_companies": 2
     },
     {
       "tool": "microsoft-dynamics",
       "n": 2,
-      "pct": 0.0105,
+      "pct": 0.0106,
       "n_companies": 2
     },
     {
@@ -129,25 +129,25 @@
     {
       "requirement": "custody",
       "n": 19,
-      "pct": 0.1,
+      "pct": 0.1005,
       "n_companies": 10
     },
     {
       "requirement": "controls",
       "n": 16,
-      "pct": 0.0842,
+      "pct": 0.0847,
       "n_companies": 8
     },
     {
       "requirement": "reconciliation",
       "n": 12,
-      "pct": 0.0632,
+      "pct": 0.0635,
       "n_companies": 11
     },
     {
       "requirement": "integration",
       "n": 7,
-      "pct": 0.0368,
+      "pct": 0.037,
       "n_companies": 6
     },
     {
@@ -1534,6 +1534,15 @@
     {
       "date": "2026-10-21",
       "total_finance_jds": 190,
+      "with_any_tool": 1,
+      "pct": 0.0053,
+      "matching_companies": 1,
+      "status": "measured",
+      "methodology_version": "finance-demand-v2"
+    },
+    {
+      "date": "2026-10-22",
+      "total_finance_jds": 189,
       "with_any_tool": 1,
       "pct": 0.0053,
       "matching_companies": 1,
