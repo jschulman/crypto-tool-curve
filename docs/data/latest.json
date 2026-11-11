@@ -1,9 +1,9 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-11-10",
-    "as_of_date": "2026-11-10",
-    "export_generated_at": "2026-11-10T09:30:01.624Z",
+    "last_updated": "2026-11-11",
+    "as_of_date": "2026-11-11",
+    "export_generated_at": "2026-11-11T09:30:01.956Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
@@ -21,10 +21,10 @@
     "n_with_tool": 1
   },
   "contrast": {
-    "value": 0.2788,
+    "value": 0.2692,
     "label": "Share of the same finance JDs naming a generic ERP",
     "n_total": 208,
-    "n_with_tool": 58,
+    "n_with_tool": 56,
     "narrative": "Specialist tools and ERPs can coexist. Job-description mentions measure hiring demand, not installed software or spreadsheet dependence."
   },
   "breadth": {
@@ -78,8 +78,8 @@
   "by_generic_erp": [
     {
       "tool": "netsuite",
-      "n": 46,
-      "pct": 0.2212,
+      "n": 44,
+      "pct": 0.2115,
       "n_companies": 21
     },
     {
@@ -1713,6 +1713,15 @@
     },
     {
       "date": "2026-11-10",
+      "total_finance_jds": 208,
+      "with_any_tool": 1,
+      "pct": 0.0048,
+      "matching_companies": 1,
+      "status": "measured",
+      "methodology_version": "finance-demand-v2"
+    },
+    {
+      "date": "2026-11-11",
       "total_finance_jds": 208,
       "with_any_tool": 1,
       "pct": 0.0048,
