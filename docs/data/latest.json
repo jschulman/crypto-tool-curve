@@ -1,29 +1,29 @@
 {
   "metadata": {
     "source": "Crypto Tool Curve",
-    "last_updated": "2026-11-16",
-    "as_of_date": "2026-11-16",
-    "export_generated_at": "2026-11-16T09:30:01.645Z",
+    "last_updated": "2026-11-17",
+    "as_of_date": "2026-11-17",
+    "export_generated_at": "2026-11-17T09:30:02.091Z",
     "version": "2.0",
     "methodology_version": "finance-demand-v2",
     "next_update": "daily at 03:00 America/Chicago"
   },
   "sample": {
-    "n_jds": 165,
+    "n_jds": 164,
     "n_companies": 49,
     "window_days": 90,
     "cohort": "crypto-baseline-v1"
   },
   "headline": {
-    "value": 0.0121,
+    "value": 0.0122,
     "label": "Share of crypto-native finance JDs active in the last 90 days naming a specialist accounting tool",
-    "n_total": 165,
+    "n_total": 164,
     "n_with_tool": 2
   },
   "contrast": {
-    "value": 0.2545,
+    "value": 0.2561,
     "label": "Share of the same finance JDs naming a generic ERP",
-    "n_total": 165,
+    "n_total": 164,
     "n_with_tool": 42,
     "narrative": "Specialist tools and ERPs can coexist. Job-description mentions measure hiring demand, not installed software or spreadsheet dependence."
   },
@@ -79,32 +79,32 @@
     {
       "tool": "netsuite",
       "n": 33,
-      "pct": 0.2,
+      "pct": 0.2012,
       "n_companies": 18
     },
     {
       "tool": "quickbooks",
       "n": 8,
-      "pct": 0.0485,
+      "pct": 0.0488,
       "n_companies": 6
     },
     {
       "tool": "oracle-fusion",
       "n": 3,
-      "pct": 0.0182,
+      "pct": 0.0183,
       "n_companies": 3
-    },
-    {
-      "tool": "sap",
-      "n": 2,
-      "pct": 0.0121,
-      "n_companies": 2
     },
     {
       "tool": "xero",
       "n": 2,
-      "pct": 0.0121,
+      "pct": 0.0122,
       "n_companies": 2
+    },
+    {
+      "tool": "sap",
+      "n": 1,
+      "pct": 0.0061,
+      "n_companies": 1
     },
     {
       "tool": "workday",
@@ -128,26 +128,26 @@
   "by_requirement": [
     {
       "requirement": "custody",
-      "n": 23,
-      "pct": 0.1394,
+      "n": 22,
+      "pct": 0.1341,
       "n_companies": 12
     },
     {
       "requirement": "controls",
-      "n": 18,
-      "pct": 0.1091,
-      "n_companies": 9
+      "n": 17,
+      "pct": 0.1037,
+      "n_companies": 8
     },
     {
       "requirement": "reconciliation",
       "n": 16,
-      "pct": 0.097,
+      "pct": 0.0976,
       "n_companies": 13
     },
     {
       "requirement": "integration",
       "n": 6,
-      "pct": 0.0364,
+      "pct": 0.0366,
       "n_companies": 5
     },
     {
@@ -1770,6 +1770,15 @@
       "total_finance_jds": 165,
       "with_any_tool": 2,
       "pct": 0.0121,
+      "matching_companies": 2,
+      "status": "measured",
+      "methodology_version": "finance-demand-v2"
+    },
+    {
+      "date": "2026-11-17",
+      "total_finance_jds": 164,
+      "with_any_tool": 2,
+      "pct": 0.0122,
       "matching_companies": 2,
       "status": "measured",
       "methodology_version": "finance-demand-v2"
